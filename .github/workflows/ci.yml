@@ -9,10 +9,10 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v4 
       - name: build image
-        run:  docker build -t ekajane83/ciportfolio .
+        run:  docker build -t ${{secrets.DOCKER_USERNAME}}/ciportfolio .
       - name: List imges
         run:  docker images
-        
+
         
   
 
