@@ -20,7 +20,7 @@ jobs:
 
       - name: push image to registry
         run: |
-         docker push ${{secrets.DOCKER_USERNAME}}/ciportfolio:${{github.run_number}} .
+         docker push ${{secrets.DOCKER_USERNAME}}/ciportfolio:${{github.run_number}} 
          docker push ${{secrets.DOCKER_USERNAME}}/ciportfolio 
         
   
